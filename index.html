@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: แก่นการพิจารณาสินเชื่อ (Credit Fundamentals)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Muji Style Palette */
+        :root {
+            --muji-dark: #333333;
+            --muji-subtle: #666666;
+            --muji-beige: #D4C9C3;
+            --muji-accent: #A8998C;
+            --muji-background: #FAF9F7;
+            --muji-card-bg: #FFFFFF;
+            --muji-border: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            /* Muji Off-White Background */
+            background-color: var(--muji-background);
+            color: var(--muji-dark); /* Dark text */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .muji-text {
+            color: var(--muji-dark); /* Dark Charcoal */
+        }
+        .muji-accent {
+            background-color: var(--muji-beige); /* Muji Beige */
+        }
+        .muji-card {
+            background-color: var(--muji-card-bg);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+            border: 1px solid var(--muji-border); /* Light border */
+        }
+        .muji-card-accent {
+             border-left-color: var(--muji-accent); /* Darker Beige/Gray for left border */
+        }
+        .video-container {
+            /* 16:9 Aspect Ratio for responsive video */
+            position: relative;
+            padding-bottom: 56.25%; /* (9 / 16) * 100 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-[var(--muji-background)] text-[var(--muji-dark)]">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold muji-text mb-2">Credit Fundamentals</h1>
+            <p class="text-lg md:text-xl text-[var(--muji-subtle)]">แก่นการพิจารณาสินเชื่อ: ธนาคารตัดสินใจปล่อยกู้อย่างไร?</p>
+        </header>
+        
+        <!-- EMBEDDED YOUTUBE VIDEO SECTION -->
+        <section id="doc-intro" class="mb-16 p-6 muji-card rounded-xl">
+            <h2 class="text-2xl md:text-3xl font-bold muji-text mb-4 text-center">Credit Lesson 101</h2>
+            <!-- YouTube Embed using the video ID from the URL: eMC6EwkBikE -->
+            <div class="video-container w-full max-w-4xl mx-auto">
+                <iframe 
+                    src="https://www.youtube.com/embed/eMC6EwkBikE" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen 
+                    class="rounded-lg shadow-xl"
+                    title="YouTube Video: Credit Lesson 101"
+                ></iframe>
+            </div>
+            <p class="text-center text-sm text-[var(--muji-subtle)] mt-4">วิดิโอนี้จะช่วยให้คุณเห็นภาพรวมของแก่นการพิจารณาสินเชื่อได้ชัดเจนยิ่งขึ้น</p>
+        </section>
+
+        <main>
+            <section id="six-cs" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold muji-text">หัวใจสำคัญ: หลัก 6 C's ในการพิจารณาสินเชื่อ</h2>
+                    <p class="text-[var(--muji-subtle)] mt-2 max-w-3xl mx-auto">ธนาคารใช้กรอบความคิด 6 มิตินี้เพื่อประเมินความเสี่ยงและตัดสินใจอนุมัติสินเชื่อ</p>
+                </div>
+                <!-- Applying Muji card styling -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="muji-card p-6 rounded-lg border-l-4 muji-card-accent transition-transform transform hover:translate-y-[-2px]">
+                        <div class="flex items-center mb-3">
+                            <span class="text-3xl mr-4 text-[var(--muji-accent)]">👤</span>
+                            <h3 class="text-xl font-bold muji-text">Character (อุปนิสัย)</h3>
+                        </div>
+                        <p class="text-[var(--muji-subtle)] text-sm"><strong>"เขาตั้งใจจะคืนเงินหรือไม่?"</strong><br>ตรวจสอบประวัติการชำระหนี้, ความน่าเชื่อถือ, และชื่อเสียงของผู้กู้</p>
+                    </div>
+                    <div class="muji-card p-6 rounded-lg border-l-4 muji-card-accent transition-transform transform hover:translate-y-[-2px]">
+                        <div class="flex items-center mb-3">
+                            <span class="text-3xl mr-4 text-[var(--muji-accent)]">💰</span>
+                            <h3 class="text-xl font-bold muji-text">Capacity (ความสามารถ)</h3>
+                        </div>
+                        <p class="text-[var(--muji-subtle)] text-sm"><strong>"เขามีปัญญาหาเงินมาคืนหรือไม่?"</strong><br>วัดจากกระแสเงินสดและความสามารถในการสร้างรายได้เพื่อชำระหนี้</p>
+                    </div>
+                    <div class="muji-card p-6 rounded-lg border-l-4 muji-card-accent transition-transform transform hover:translate-y-[-2px]">
+                        <div class="flex items-center mb-3">
+                            <span class="text-3xl mr-4 text-[var(--muji-accent)]">🏢</span>
+                            <h3 class="text-xl font-bold muji-text">Capital (เงินทุน)</h3>
+                        </div>
+                        <p class="text-[var(--muji-subtle)] text-sm"><strong>"เขาร่วมลงทุนในธุรกิจตัวเองแค่ไหน?"</strong><br>ส่วนของผู้ถือหุ้นที่สูงสะท้อนความมุ่งมั่นและความพร้อมรับความเสี่ยงร่วมกับธนาคาร</p>
+                    </div>
+                    <div class="muji-card p-6 rounded-lg border-l-4 muji-card-accent transition-transform transform hover:translate-y-[-2px]">
+                        <div class="flex items-center mb-3">
+                            <span class="text-3xl mr-4 text-[var(--muji-accent)]">📄</span>
+                            <h3 class="text-xl font-bold muji-text">Collateral (หลักประกัน)</h3>
+                        </div>
+                        <p class="text-[var(--muji-subtle)] text-sm"><strong>"ถ้าคืนเงินไม่ได้ มีอะไรให้ยึดบ้าง?"</strong><br>สินทรัพย์ค้ำประกัน เป็นแผนสำรองหากเกิดการผิดนัดชำระหนี้</p>
+                    </div>
+                    <div class="muji-card p-6 rounded-lg border-l-4 muji-card-accent transition-transform transform hover:translate-y-[-2px]">
+                        <div class="flex items-center mb-3">
+                            <span class="text-3xl mr-4 text-[var(--muji-accent)]">📈</span>
+                            <h3 class="text-xl font-bold muji-text">Conditions (สภาวการณ์)</h3>
+                        </div>
+                        <p class="text-[var(--muji-subtle)] text-sm"><strong>"สภาพเศรษฐกิจและตลาดเอื้ออำนวยหรือไม่?"</strong><br>แนวโน้มอุตสาหกรรม, การแข่งขัน, และปัจจัยเศรษฐกิจมหภาค</p>
+                    </div>
+                    <div class="muji-card p-6 rounded-lg border-l-4 muji-card-accent transition-transform transform hover:translate-y-[-2px]">
+                        <div class="flex items-center mb-3">
+                            <span class="text-3xl mr-4 text-[var(--muji-accent)]">🌍</span>
+                            <h3 class="text-xl font-bold muji-text">Country Risk (ความเสี่ยง ปท.)</h3>
+                        </div>
+                        <p class="text-[var(--muji-subtle)] text-sm"><strong>"มีปัจจัยภายนอกที่ควบคุมไม่ได้ไหม?"</strong><br>ความเสี่ยงจากอัตราแลกเปลี่ยน, การเมือง สำหรับธุรกิจที่เกี่ยวข้องกับต่างประเทศ</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="loan-types" class="mb-16">
+                 <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold muji-text">เงินกู้นำไปใช้ทำอะไร? ประเภทสินเชื่อธุรกิจ</h2>
+                    <p class="text-[var(--muji-subtle)] mt-2 max-w-3xl mx-auto">พิจารณาวัตถุประสงค์การใช้เงินเพื่อจัดสรรวงเงินสินเชื่อที่เหมาะสม</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="muji-card p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold muji-text mb-3">เงินทุนหมุนเวียน</h3>
+                        <p class="text-[var(--muji-subtle)] text-sm">ใช้เพื่อการดำเนินงานรายวัน เช่น ซื้อวัตถุดิบ (O/D, P/N) เป็นสินเชื่อระยะสั้น</p>
+                    </div>
+                    <div class="muji-card p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold muji-text mb-3">เงินลงทุน</h3>
+                        <p class="text-[var(--muji-subtle)] text-sm">ใช้เพื่อขยายกิจการ ซื้อเครื่องจักร หรือสร้างโรงงาน (Term Loan) เป็นสินเชื่อระยะยาว ผ่อนชำระเป็นงวด</p>
+                    </div>
+                    <div class="muji-card p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold muji-text mb-3">การค้าระหว่างประเทศ</h3>
+                        <p class="text-[var(--muji-subtle)] text-sm">สนับสนุนการนำเข้า-ส่งออก เช่น การเปิด L/C เพื่อสร้างความเชื่อมั่นระหว่างคู่ค้า</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- START NEW SECTION: Consumer Lending Fundamentals (ข้อมูลจาก PDF) -->
+            <section id="consumer-lending" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold muji-text">ส่องอีกมุม: หลักเกณฑ์สินเชื่อลูกค้าบุคคล (Consumer Lending)</h2>
+                    <p class="text-[var(--muji-subtle)] mt-2 max-w-3xl mx-auto">สินเชื่อส่วนบุคคลเน้นที่ความมั่นคงของ **"กระแสเงินสดส่วนตัว"** และ **"ประวัติการเงิน"**</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Secured vs Unsecured Card -->
+                    <div class="lg:col-span-2 muji-card p-6 rounded-lg border-l-4 muji-card-accent">
+                        <h3 class="text-xl font-bold muji-text mb-3">2 กลุ่มหลักของสินเชื่อบุคคล (ตามหลักประกัน)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-bold text-[var(--muji-dark)] mb-1">🔒 มีหลักประกัน (Secured Loan)</h4>
+                                <p class="text-sm text-[var(--muji-subtle)]">ใช้ทรัพย์สินค้ำประกัน ลดความเสี่ยงธนาคาร</p>
+                                <ul class="list-disc list-inside text-sm text-[var(--muji-dark)] mt-2 space-y-1 ml-4">
+                                    <li>สินเชื่อเพื่อที่อยู่อาศัย (Mortgage Loan)</li>
+                                    <li>สินเชื่อเช่าซื้อรถยนต์ (Auto Finance)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[var(--muji-dark)] mb-1">🔓 ไม่มีหลักประกัน (Unsecured Loan)</h4>
+                                <p class="text-sm text-[var(--muji-subtle)]">พิจารณาจากรายได้และประวัติการเงินล้วน ๆ</p>
+                                <ul class="list-disc list-inside text-sm text-[var(--muji-dark)] mt-2 space-y-1 ml-4">
+                                    <li>บัตรเครดิต (Credit Card)</li>
+                                    <li>สินเชื่อหมุนเวียน/เงินสด (Speedy Cash)</li>
+                                    <li>สินเชื่อบุคคล (Speedy Loan)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Eligibility Card -->
+                    <div class="muji-card p-6 rounded-lg bg-[var(--muji-beige)]">
+                        <h3 class="text-xl font-bold muji-text mb-3">คุณสมบัติเบื้องต้น (ตามเอกสาร)</h3>
+                        <p class="text-sm text-[var(--muji-subtle)] mb-4">เกณฑ์พื้นฐานที่ผู้กู้ต้องมีเพื่อเริ่มต้นกระบวนการพิจารณา:</p>
+                        <ul class="list-none space-y-2 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-lg mr-2">🎂</span>
+                                <div>อายุ: **ระหว่าง 20-60 ปี**</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-lg mr-2">💵</span>
+                                <div>รายได้ขั้นต่ำ (ตัวอย่าง): <br/>**20,000 บ.** (พนักงานประจำ) <br/>**30,000 บ.** (เจ้าของธุรกิจ)</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-lg mr-2">📞</span>
+                                <div>การติดต่อ: มีหมายเลขโทรศัพท์ที่บ้านหรือที่ทำงานที่ติดต่อได้</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!-- END NEW SECTION: Consumer Lending Fundamentals -->
+
+            <section id="capacity-analysis" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold muji-text">วิเคราะห์ความสามารถในการชำระหนี้ (Capacity)</h2>
+                    <p class="text-[var(--muji-subtle)] mt-2 max-w-3xl mx-auto">ธนาคารจะเจาะลึกข้อมูลทางการเงินเพื่อประเมินว่าธุรกิจมี "ปัญญา" หาเงินมาคืนหนี้ได้จริงหรือไม่</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="muji-card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-center muji-text mb-4">องค์ประกอบในการวิเคราะห์</h3>
+                        <p class="text-xs text-center text-[var(--muji-subtle)] mb-4">ธนาคารให้น้ำหนักกับการวิเคราะห์งบการเงินและอัตราส่วนต่างๆ เป็นหลัก</p>
+                        <div class="chart-container h-64 md:h-80">
+                            <canvas id="capacityComponentsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="muji-card p-6 rounded-lg">
+                         <h3 class="text-xl font-semibold text-center muji-text mb-4">อัตราส่วนทางการเงินที่สำคัญ</h3>
+                         <p class="text-xs text-center text-[var(--muji-subtle)] mb-4">อัตราส่วนเหล่านี้เป็นเหมือนเครื่องวัดสุขภาพทางการเงินในมิติต่างๆ</p>
+                        <div class="chart-container h-64 md:h-80">
+                            <canvas id="financialRatiosChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sector-risks" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold muji-text">ความเสี่ยงเฉพาะตัวในแต่ละอุตสาหกรรม</h2>
+                    <p class="text-[var(--muji-subtle)] mt-2 max-w-3xl mx-auto">แต่ละธุรกิจมีความเสี่ยงเฉพาะตัวที่แตกต่างกัน ธนาคารจึงต้องวิเคราะห์ให้ลึกซึ้งยิ่งขึ้น</p>
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="muji-card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-center muji-text mb-4">เปรียบเทียบโปรไฟล์ความเสี่ยง</h3>
+                        <p class="text-xs text-center text-[var(--muji-subtle)] mb-4">แผนภูมินี้แสดงให้เห็นว่าแต่ละอุตสาหกรรมมีความเปราะบางต่อความเสี่ยงประเภทต่างๆ ไม่เท่ากัน</p>
+                        <div class="chart-container">
+                            <canvas id="sectorRiskChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="muji-card p-4 rounded-lg">
+                            <h4 class="font-bold muji-text">อสังหาริมทรัพย์</h4>
+                            <p class="text-sm text-[var(--muji-subtle)]">ความเสี่ยงหลัก: ความผันผวนของตลาด, ทำเลไม่ดี, ต้นทุนก่อสร้างบานปลาย</p>
+                        </div>
+                        <div class="muji-card p-4 rounded-lg">
+                             <h4 class="font-bold muji-text">รับเหมาก่อสร้าง</h4>
+                             <p class="text-sm text-[var(--muji-subtle)]">ความเสี่ยงหลัก: บริหารโครงการล่าช้า, งบประมาณเกินกำหนด, ปัญหาการเก็บเงิน</p>
+                        </div>
+                        <div class="muji-card p-4 rounded-lg">
+                             <h4 class="font-bold muji-text">โรงแรมและการท่องเที่ยว</h4>
+                             <p class="text-sm text-[var(--muji-subtle)]">ความเสี่ยงหลัก: ผลกระทบจากสภาวะเศรษฐกิจ, การเมือง, และโรคระบาด</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer section with the prominent link (same link as the top section for consistency) -->
+        <section id="next-step" class="text-center mt-12 mb-16 p-8 muji-accent rounded-xl shadow-md">
+            <h2 class="text-2xl md:text-3xl font-bold muji-text mb-4">เรารู้นะ ว่าคุณขี้เกียจอ่านอยู่ใช่มั้ย</h2>
+            <p class="text-[var(--muji-subtle)] mb-6 max-w-2xl mx-auto">อยากมีคนช่วยสรุป ถามอะไรก็ตอบได้หรือไม่</p>
+            <a href="https://notebooklm.google.com/notebook/60ea4ec6-58d5-41f1-843d-d48a322ff424?artifactId=5776bd2b-c63a-46fa-83f2-4f86740c5445" target="_blank" class="inline-block px-8 py-3 bg-[var(--muji-dark)] text-white font-semibold rounded-lg shadow-md hover:bg-[var(--muji-subtle)] transition duration-300 transform hover:scale-105">
+                ไปเบิกตัวผู้ช่วยกัน!
+            </a>
+        </section>
+        
+        <footer class="text-center mt-12 py-6 border-t border-[var(--muji-border)]">
+            <p class="text-[var(--muji-subtle)]">สรุป: การอนุมัติสินเชื่อเป็นศาสตร์และศิลป์ที่ผสมผสานการวิเคราะห์ข้อมูลเชิงลึกเข้ากับความเข้าใจในธุรกิจและสภาวการณ์</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Muji Chart Colors
+        const colorPalette = {
+            primary: '#A8998C', // Muted Brown/Beige
+            secondary: '#D4C9C3', // Light Beige
+            tertiary: '#E0E0E0', // Light Gray
+            dark: '#333333',
+            subtle: '#666666',
+            background: '#FAF9F7'
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const defaultChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: colorPalette.dark,
+                        font: {
+                            family: "'Sarabun', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    bodyFont: {
+                        family: "'Sarabun', sans-serif"
+                    },
+                    titleFont: {
+                        family: "'Sarabun', sans-serif"
+                    }
+                }
+            }
+        };
+
+        // --- Capacity Components Chart (Doughnut) ---
+        const capacityCtx = document.getElementById('capacityComponentsChart').getContext('2d');
+        new Chart(capacityCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['วิเคราะห์งบการเงิน', 'อัตราส่วนทางการเงิน', 'รายการเดินบัญชี'],
+                datasets: [{
+                    label: 'สัดส่วนการวิเคราะห์',
+                    data: [50, 35, 15],
+                    backgroundColor: [colorPalette.dark, colorPalette.primary, colorPalette.secondary], // Muji colors
+                    borderColor: colorPalette.background,
+                    borderWidth: 2
+                }]
+            },
+            options: { ...defaultChartOptions }
+        });
+
+        // --- Financial Ratios Chart (Bar) ---
+        const ratiosCtx = document.getElementById('financialRatiosChart').getContext('2d');
+        new Chart(ratiosCtx, {
+            type: 'bar',
+            data: {
+                labels: ['สภาพคล่อง', 'ความสามารถทำกำไร', 'ภาระหนี้สิน'],
+                datasets: [{
+                    label: 'ระดับความสำคัญในการพิจารณา',
+                    data: [85, 95, 90],
+                    backgroundColor: [colorPalette.secondary, colorPalette.primary, colorPalette.dark], // Muji colors
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: { display: false },
+                        ticks: { color: colorPalette.dark }
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { color: colorPalette.dark }
+                    }
+                },
+                plugins: {
+                     ...defaultChartOptions.plugins,
+                     legend: { display: false }
+                }
+            }
+        });
+
+        // --- Sector Risk Chart (Radar) ---
+        const riskCtx = document.getElementById('sectorRiskChart').getContext('2d');
+        new Chart(riskCtx, {
+            type: 'radar',
+            data: {
+                labels: ['ความผันผวนของตลาด', 'การบริหารโครงการ', 'ปัจจัยภายนอก', 'การพึ่งพิงสภาพคล่อง'],
+                datasets: [
+                    {
+                        label: 'อสังหาริมทรัพย์',
+                        data: [9, 6, 7, 8],
+                        fill: true,
+                        backgroundColor: 'rgba(51, 51, 51, 0.15)', /* Dark */
+                        borderColor: colorPalette.dark,
+                        pointBackgroundColor: colorPalette.dark,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: colorPalette.dark
+                    },
+                    {
+                        label: 'รับเหมาก่อสร้าง',
+                        data: [5, 9, 4, 9],
+                        fill: true,
+                        backgroundColor: 'rgba(168, 153, 140, 0.25)', /* Primary */
+                        borderColor: colorPalette.primary,
+                        pointBackgroundColor: colorPalette.primary,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: colorPalette.primary
+                    },
+                    {
+                        label: 'โรงแรม',
+                        data: [7, 5, 10, 6],
+                        fill: true,
+                        backgroundColor: 'rgba(212, 201, 195, 0.35)', /* Secondary */
+                        borderColor: colorPalette.secondary,
+                        pointBackgroundColor: colorPalette.secondary,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: colorPalette.secondary
+                    }
+                ]
+            },
+            options: {
+                ...defaultChartOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(51, 51, 51, 0.2)' },
+                        grid: { color: 'rgba(51, 51, 51, 0.2)' },
+                        pointLabels: {
+                            color: colorPalette.dark,
+                            font: {
+                                family: "'Sarabun', sans-serif",
+                                size: 12
+                            }
+                        },
+                        ticks: {
+                            backdropColor: colorPalette.background,
+                            color: colorPalette.subtle
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
